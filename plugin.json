@@ -1,0 +1,74 @@
+{
+  "id": "ardoise.gitlab",
+  "name": {
+    "en": "GitLab",
+    "fr": "GitLab"
+  },
+  "version": "1.0.0",
+  "api": 1,
+  "description": {
+    "en": "The merge requests of the project (list, make, read with files, diffs and comments, approve, merge, delete), its pipelines and its tags, in a tab of the Git panel",
+    "fr": "Les merge requests du projet (lister, créer, lire avec fichiers, diffs et commentaires, approuver, fusionner, supprimer), ses pipelines et ses étiquettes, dans un onglet du panneau Git"
+  },
+  "author": "Ardoise Editor",
+  "repository": "ardoise-editor/plugin-gitlab",
+  "license": "MIT",
+  "command": [
+    "bin/gitlab"
+  ],
+  "events": [
+    "active_file"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "id": "gitlab.show",
+        "title": {
+          "en": "GitLab: Merge Requests",
+          "fr": "GitLab : merge requests"
+        }
+      },
+      {
+        "id": "gitlab.mr_new",
+        "title": {
+          "en": "GitLab: New Merge Request…",
+          "fr": "GitLab : nouvelle merge request…"
+        }
+      },
+      {
+        "id": "gitlab.pipelines",
+        "title": {
+          "en": "GitLab: Pipelines",
+          "fr": "GitLab : pipelines"
+        }
+      },
+      {
+        "id": "gitlab.tags",
+        "title": {
+          "en": "GitLab: Tags",
+          "fr": "GitLab : étiquettes"
+        }
+      }
+    ],
+    "panels": [
+      {
+        "id": "main",
+        "title": {
+          "en": "GitLab",
+          "fr": "GitLab"
+        },
+        "icon": "",
+        "location": "bottom",
+        "group": "git"
+      },
+      {
+        "id": "settings",
+        "title": {
+          "en": "GitLab",
+          "fr": "GitLab"
+        },
+        "location": "settings"
+      }
+    ]
+  }
+}
