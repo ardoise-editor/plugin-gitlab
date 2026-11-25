@@ -4,7 +4,7 @@
     "en": "GitLab",
     "fr": "GitLab"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "api": 1,
   "description": {
     "en": "The merge requests of the project (list, make, read with files, diffs and comments, approve, merge, delete), its pipelines and its tags, in a tab of the Git panel",
